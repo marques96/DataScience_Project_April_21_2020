@@ -44,3 +44,14 @@ while(proximo <= n):
 
     if(proximo == 0):
         proximo = proximo + 1
+
+# Function Challenge
+# Reverso do número. Faça uma função que retorne o reverso
+# de um número inteiro informado. Por exemplo: 127 -> 721.
+n = input("Entre com número: ")
+
+def reverso(n):
+    inverte = str(n)
+    print(inverte[::-1])
+
+print(reverso(n))
