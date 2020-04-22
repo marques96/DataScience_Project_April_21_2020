@@ -28,3 +28,19 @@ elif shift == 'N':
     print("Boa noite!")
 else:
     print("Valor Inválido!")
+
+# Loop Challenge
+# A série de Fibonacci é formada pela seqüência 1,1,2,3,5,8,13,21,34,55,...
+# Faça um programa capaz de gerar a série até o n−ésimo termo.
+# Qual numero voce deseja receber a sequencia fibonacci? 34
+n = int(input("Escolha um número: "))
+anterior = 0
+proximo = 0
+
+while(proximo <= n):
+    print(proximo)
+    proximo = proximo + anterior
+    anterior = proximo - anterior
+
+    if(proximo == 0):
+        proximo = proximo + 1
